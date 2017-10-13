@@ -9,7 +9,7 @@ elif [ "$1" == "broadcast" ]
 then
      if [ ! -z "$2" ]
      then
-        adb shell am broadcast -a "$2" -c io.emma.emmaandroid -n io.emma.emmaandroid/io.emma.android.push.EMMAPushBroadcastReceiver
+        adb shell am broadcast -a "$2" -c io.emma.emmaandroid
       else
         echo "Error: action parameter is missing: Eg: broadcast com.package.action"
       fi
@@ -23,7 +23,7 @@ then
         echo "Error: deeplink string parameters is missing. Eg: deeplink emmaio://settings"
     fi
 else
-    echo "Use:
+    echo "Usage:
               -> push test
               -> broadcast broadcast com.package.action
               -> deeplink emmaio://settings"
