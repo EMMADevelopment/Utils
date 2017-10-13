@@ -2,7 +2,7 @@
 
 if [ "$1" == "push" ]
 then
-    if [ ! -z "$2"]
+    if [ ! -z "$2" ]
      then
         adb shell am broadcast -a com.google.android.c2dm.intent.RECEIVE -c io.emma.emmaandroid -n io.emma.emmaandroid/io.emma.android.push.EMMAGCMBroadcastReceiver --es "eMMa" "1" --es "message" "Test_notification" --es "id" "$2" --es "url" "https://www.google.es" --es "richPicture" "http://www.tivix.com/uploads/blog_pics/Android-logo.png" --es "productId" "RULE1"
       else
