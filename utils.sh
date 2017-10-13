@@ -25,7 +25,7 @@ then
 else
     echo "Usage:
               -> push test
-              -> broadcast broadcast com.package.action
+              -> broadcast com.package.action
               -> deeplink emmaio://settings"
 fi
 
